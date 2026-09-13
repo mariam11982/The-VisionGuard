@@ -460,6 +460,157 @@
     </div>
 
   </div>
+  <!-- بوكسات شرح خطوات المحاكاة -->
+<div class="vg-step-cards">
+
+  <!-- الخطوة الأولى -->
+  <div class="vg-step-card active" data-step-card="0">
+
+    <div class="vg-step-card-header">
+      <div class="vg-step-icon">➤</div>
+
+      <div>
+        <small>الخطوة 01 — إرسال الدرون</small>
+        <h3>المفتش يحدد المنطقة الخطرة</h3>
+      </div>
+    </div>
+
+    <p class="vg-step-details">
+      من خلال المنصة الرقمية، يحدد المفتش المنطقة الخطرة
+      التي تحتاج إلى تفتيش ويصدر أمر المهمة.
+    </p>
+
+  </div>
+
+  <!-- الخطوة الثانية -->
+  <div class="vg-step-card" data-step-card="1">
+
+    <div class="vg-step-card-header">
+      <div class="vg-step-icon">▷</div>
+
+      <div>
+        <small>الخطوة 02 — بدء التفتيش</small>
+        <h3>إرسال الدرون بدلًا من المفتش</h3>
+      </div>
+    </div>
+
+    <p class="vg-step-details">
+      بدلًا من دخول المفتش إلى المنطقة الخطرة،
+      يتم إرسال الدرون (Drone) إلى الموقع المستهدف.
+    </p>
+
+  </div>
+
+  <!-- الخطوة الثالثة -->
+  <div class="vg-step-card" data-step-card="2">
+
+    <div class="vg-step-card-header">
+      <div class="vg-step-icon">⌗</div>
+
+      <div>
+        <small>الخطوة 03 — مسح وتصوير الموقع</small>
+        <h3>مسح الخزانات والأنابيب والمعدات</h3>
+      </div>
+    </div>
+
+    <p class="vg-step-details">
+      تتحرك الدرون حول الخزانات والأنابيب والصمامات
+      وتقوم بالمسح والتصوير بدقة عالية.
+    </p>
+
+  </div>
+
+  <!-- الخطوة الرابعة -->
+  <div class="vg-step-card" data-step-card="3">
+
+    <div class="vg-step-card-header">
+      <div class="vg-step-icon">◉</div>
+
+      <div>
+        <small>الخطوة 04 — إرسال البيانات بشكل حي</small>
+        <h3>تدفق البيانات إلى لوحة التحكم</h3>
+      </div>
+    </div>
+
+    <p class="vg-step-details">
+      تُنقل بيانات التفتيش والفيديو بشكل حي
+      (Live Data) من الدرون إلى المنصة أثناء تنفيذ المهمة.
+    </p>
+
+  </div>
+
+  <!-- الخطوة الخامسة -->
+  <div class="vg-step-card" data-step-card="4">
+
+    <div class="vg-step-card-header">
+      <div class="vg-step-icon">⚠</div>
+
+      <div>
+        <small>الخطوة 05 — رصد نقطة تحتاج فحصًا</small>
+        <h3>إبراز حالة غير طبيعية للمراجعة</h3>
+      </div>
+    </div>
+
+    <p class="vg-step-details">
+      يظهر مثال بصري لنقطة تحتاج إلى فحص، مثل احتمال
+      تسريب أو مؤشر تآكل. المنظومة تُبرز النقطة للمراجعة
+      ولا تؤكد تشخيص العطل.
+    </p>
+
+  </div>
+
+  <!-- الخطوة السادسة -->
+  <div class="vg-step-card" data-step-card="5">
+
+    <div class="vg-step-card-header">
+      <div class="vg-step-icon">✓</div>
+
+      <div>
+        <small>الخطوة 06 — تقييم واتخاذ القرار</small>
+        <h3>المفتش يقرر من موقع آمن</h3>
+      </div>
+    </div>
+
+    <p class="vg-step-details">
+      يراجع المفتش الصور والبيانات من مكان آمن،
+      ويقيّم الحالة ويتخذ القرار دون دخول المنطقة الخطرة.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- بوكس أمان المفتش -->
+<div class="inspector-safety-card">
+
+  <!-- الصورة -->
+  <div class="inspector-image">
+    <img
+      src="imges/inspector-control-room.jpg"
+      alt="المفتش يراقب الدرون من غرفة التحكم"
+    >
+  </div>
+
+  <!-- محتوى البوكس -->
+  <div class="inspector-content">
+
+    <div class="inspector-camera-icon">▣</div>
+
+    <h2>المفتش لا يدخل المنطقة الخطرة</h2>
+
+    <p>
+      الآلة تذهب إلى الموقع، والبيانات تعود إلى المفتش.
+      التقييم واتخاذ القرار يتمان عن بُعد ومن مكان آمن تمامًا.
+    </p>
+
+    <div class="inspector-status">
+      <span class="location-icon">⌖</span>
+      <span>صفر دخول بشري · منطقة عالية الخطورة</span>
+    </div>
+
+  </div>
+
+</div>
 
   <!-- تُنشأ بطاقات الشرح هنا بواسطة السكربت -->
   <div class="vg-cards" id="vgCards"></div>
@@ -469,9 +620,618 @@
   </p>
 
 </section>
+<!-- =====================================
+     04 — لوحة تحكم المفتش
+===================================== -->
+
+<section class="db-section" id="dashboard">
+
+  <p class="db-section-number">
+    04 — لوحة تحكم المفتش (DASHBOARD)
+  </p>
+
+  <h2 class="db-main-title">
+    لوحة تحكم مصممة لاتخاذ القرار،
+    لا للأعمال الورقية
+  </h2>
+
+  <p class="db-main-description">
+    حالة التفتيش، البث المباشر، البيانات المجمعة والتنبيهات
+    في شاشة واحدة — ليتم تقييم الحالة عن بُعد خلال ثوانٍ.
+  </p>
+
+
+  <!-- اللوحة الرئيسية -->
+  <div class="db-main-panel">
+
+    <!-- حالة التفتيش -->
+    <div class="db-status-header">
+
+      <div class="db-inspection-status">
+        <span class="db-status-dot" id="dbStatusDot"></span>
+
+        <strong id="dbInspectionStatus">
+          حالة التفتيش · جاهز للبدء
+        </strong>
+      </div>
+
+      <button id="dbStartButton" type="button">
+        ▷ بدء التفتيش
+      </button>
+
+    </div>
+
+
+    <!-- معلومات المهمة -->
+    <div class="db-mission-info">
+
+      <div class="db-info-item">
+        <span class="db-info-icon">⌖</span>
+
+        <span>
+          موقع التفتيش:
+          <strong>القطاع B · حقل الخزانات</strong>
+        </span>
+      </div>
+
+      <div class="db-info-item db-danger-text">
+        <span class="db-info-icon">ϟ</span>
+
+        <span>
+          المنطقة الخطرة:
+          <strong>مرتفعة</strong>
+        </span>
+      </div>
+
+      <div class="db-info-item">
+        <span class="db-info-icon">▣</span>
+
+        <span id="dbBatteryText">البطارية: 76%</span>
+      </div>
+
+    </div>
+
+
+    <!-- البث المباشر -->
+    <div
+      class="db-live-view"
+      id="dbLiveView"
+      tabindex="0"
+      role="button"
+      aria-label="فتح تفاصيل البث المباشر"
+    >
+
+      <div class="db-live-grid"></div>
+
+      <!-- موجة المسح المتحركة -->
+      <div class="db-scan-line" id="dbScanLine"></div>
+
+      <div class="db-live-badge">
+        <span></span>
+        البث المباشر
+      </div>
+
+      <div class="db-camera-name">
+        VG-DRONE-01 · 4K
+      </div>
+
+
+      <!-- نقطة تحتاج إلى فحص -->
+      <button
+        class="db-anomaly"
+        id="dbAnomaly"
+        type="button"
+        aria-label="عرض تفاصيل نقطة الفحص"
+      >
+        <span>نقطة تحتاج إلى فحص</span>
+      </button>
+
+
+      <!-- شكل الخزان -->
+      <div class="db-tank-shape">
+
+        <div class="db-tank-top"></div>
+
+        <div class="db-tank-body"></div>
+
+      </div>
+
+
+      <!-- بيانات حركة الدرون -->
+      <div class="db-flight-data">
+        ALT <span id="dbAltitude">14.2</span>m
+        ·
+        SPD <span id="dbSpeed">0.0</span>m/s
+      </div>
+
+    </div>
+
+
+    <!-- رسالة التفاعل -->
+    <div class="db-notice" id="dbNotice">
+      اضغطي «بدء التفتيش» لتشغيل لوحة التحكم
+    </div>
+
+
+    <!-- تقدم التفتيش -->
+    <div class="db-progress-section">
+
+      <div class="db-progress-header">
+        <h3>تقدم التفتيش</h3>
+
+        <span id="dbProgressNumber">0%</span>
+      </div>
+
+      <div
+        class="db-progress-track"
+        id="dbProgressTrack"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div
+          class="db-progress-fill"
+          id="dbProgressFill"
+        ></div>
+      </div>
+
+    </div>
+
+
+    <!-- البيانات المجمعة -->
+    <div class="db-data-section">
+
+      <h3 class="db-data-title">
+        البيانات المجمعة
+      </h3>
+
+      <div class="db-data-grid">
+
+        <!-- درجة الحرارة -->
+        <button
+          class="db-data-card"
+          type="button"
+          data-dashboard-card="temperature"
+        >
+          <span class="db-card-icon">♨</span>
+
+          <span class="db-card-label">
+            درجة حرارة السطح
+          </span>
+
+          <strong id="dbTemperature">
+            42°C
+          </strong>
+
+          <small>
+            اضغطي لعرض التفاصيل
+          </small>
+        </button>
+
+
+        <!-- قراءة الغاز -->
+        <button
+          class="db-data-card"
+          type="button"
+          data-dashboard-card="gas"
+        >
+          <span class="db-card-icon">≋</span>
+
+          <span class="db-card-label">
+            قراءة الغاز
+          </span>
+
+          <strong id="dbGasReading">
+            ضمن الحد الطبيعي
+          </strong>
+
+          <small>
+            اضغطي لعرض التفاصيل
+          </small>
+        </button>
+
+
+        <!-- الصور -->
+        <button
+          class="db-data-card"
+          type="button"
+          data-dashboard-card="images"
+        >
+          <span class="db-card-icon">▣</span>
+
+          <span class="db-card-label">
+            الصور الملتقطة
+          </span>
+
+          <strong id="dbImagesCount">
+            0
+          </strong>
+
+          <small>
+            اضغطي لعرض التفاصيل
+          </small>
+        </button>
+
+
+        <!-- الاتصال -->
+        <button
+          class="db-data-card"
+          type="button"
+          data-dashboard-card="connection"
+        >
+          <span class="db-card-icon">▥</span>
+
+          <span class="db-card-label">
+            جودة الاتصال
+          </span>
+
+          <strong id="dbConnection">
+            في الانتظار
+          </strong>
+
+          <small>
+            اضغطي لعرض التفاصيل
+          </small>
+        </button>
+
+      </div>
+
+      <p class="db-demo-note">
+        * قيم تجريبية لأغراض العرض فقط
+      </p>
+
+    </div>
+
+
+    <!-- الدرون النشطة -->
+    <button
+      class="db-wide-card db-drone-card"
+      type="button"
+      data-dashboard-card="drone"
+    >
+
+      <span class="db-wide-card-title">
+        ϟ الدرون النشطة
+      </span>
+
+      <strong>VG-DRONE-01</strong>
+
+      <span>
+        تفتيش ذاتي · مسار القطاع B
+      </span>
+
+    </button>
+
+
+    <!-- التنبيهات -->
+    <div
+      class="db-wide-card db-alerts-card"
+      data-dashboard-card="alerts"
+      tabindex="0"
+      role="button"
+    >
+
+      <h3>♧ التنبيهات</h3>
+
+      <div class="db-alert-row db-alert-warning">
+        <span class="db-alert-dot"></span>
+
+        <span>
+          نقطة تحتاج إلى فحص · الخزان T-04
+        </span>
+
+        <time id="dbAlertTime1">00:00</time>
+      </div>
+
+      <div class="db-alert-row">
+        <span class="db-alert-dot"></span>
+
+        <span>
+          الوصول إلى منشأة مرتفعة · القطاع B
+        </span>
+
+        <time id="dbAlertTime2">00:00</time>
+      </div>
+
+      <div class="db-alert-row db-alert-success">
+        <span class="db-alert-dot"></span>
+
+        <span>
+          البث المباشر مستقر
+        </span>
+
+        <time id="dbAlertTime3">00:00</time>
+      </div>
+
+    </div>
+
+
+    <!-- سجل التفتيش -->
+    <div
+      class="db-wide-card db-history-card"
+      data-dashboard-card="history"
+      tabindex="0"
+      role="button"
+    >
+
+      <h3>◴ سجل التفتيش</h3>
+
+      <div class="db-history-row">
+        <span>INS-2041</span>
+        <span>خط أنابيب A</span>
+        <strong>مكتمل</strong>
+      </div>
+
+      <div class="db-history-row">
+        <span>INS-2040</span>
+        <span>محطة صمامات 3</span>
+        <strong>مكتمل</strong>
+      </div>
+
+      <div class="db-history-row">
+        <span>INS-2039</span>
+        <span>الخزان T-02</span>
+        <strong>صدر التقرير</strong>
+      </div>
+
+
+      <!-- زر إصدار التقرير -->
+      <button
+        id="dbReportButton"
+        type="button"
+      >
+        ▤ إصدار التقرير
+      </button>
+
+    </div>
+
+  </div>
+<!-- ملخص أقسام VISIONGUARD -->
+<div class="db-summary-card">
+
+  <a class="db-summary-row" href="#problem">
+
+    <strong>01 · المشكلة</strong>
+
+    <p>
+      التفتيش اليدوي والورقي
+      ← ارتفاع وقت دورة التفتيش
+      + ارتفاع مستوى المخاطر
+    </p>
+
+  </a>
+
+
+  <a class="db-summary-row" href="#solution">
+
+    <strong>02 · الحل</strong>
+
+    <p>
+      VISIONGUARD
+      ← منصة رقمية
+      + درون
+      + روبوتات
+    </p>
+
+  </a>
+
+
+  <a class="db-summary-row" href="#drone">
+
+    <strong>03 · كيف تعمل المنظومة؟</strong>
+
+    <p>
+      الإرسال
+      ← التفتيش
+      ← نقل البيانات
+      ← التحليل
+      ← اتخاذ القرار
+    </p>
+
+  </a>
+
+
+  <a class="db-summary-row" href="#impact">
+
+    <strong>04 · الأثر</strong>
+
+    <p>
+      تفتيش أسرع
+      + سلامة أعلى للأفراد
+      + عمليات أكثر ذكاءً
+    </p>
+
+  </a>
+
+</div>
+</section>
+
+<!-- =====================================
+     05 — قسم الأثر
+===================================== -->
+
+<section class="impact-section" id="impact">
+
+  <p class="impact-number">
+    05 — الأثر
+  </p>
+
+  <h2 class="impact-main-title">
+    تفتيش أسرع + سلامة أعلى للأفراد +
+    <span>عمليات أكثر ذكاءً</span>
+  </h2>
+
+
+  <div class="impact-cards">
+
+    <!-- رفع الكفاءة -->
+    <button
+      class="impact-card"
+      type="button"
+      data-impact="efficiency"
+    >
+      <span class="impact-icon">◴</span>
+
+      <h3>رفع الكفاءة التشغيلية</h3>
+
+      <p>
+        تحسين كفاءة عمليات التفتيش وتحويلها إلى عملية
+        رقمية مترابطة بدلًا من الإجراءات الورقية.
+      </p>
+
+      <span class="impact-result">
+        توثيق رقمي · بيانات منظمة · قرارات أسرع
+      </span>
+    </button>
+
+
+    <!-- تقليل الوقت -->
+    <button
+      class="impact-card"
+      type="button"
+      data-impact="time"
+    >
+      <span class="impact-icon">◷</span>
+
+      <h3>تقليل وقت دورة التفتيش</h3>
+
+      <p>
+        تقليل الوقت المستغرق في عمليات التفتيش
+        (Time Cycle) عبر الأتمتة والتوثيق الفوري.
+      </p>
+
+      <span class="impact-result">
+        خطوات أقل · متابعة فورية · وقت أسرع
+      </span>
+    </button>
+
+
+    <!-- سلامة الأفراد -->
+    <button
+      class="impact-card"
+      type="button"
+      data-impact="safety"
+    >
+      <span class="impact-icon">♡</span>
+
+      <h3>الحفاظ على الأرواح البشرية</h3>
+
+      <p>
+        تقليل تعرض المفتشين للمخاطر في البيئات الخطرة.
+      </p>
+
+      <span class="impact-result">
+        تقليل الدخول البشري · تفتيش عن بُعد
+      </span>
+    </button>
+
+
+    <!-- بيئة عمل ذكية -->
+    <button
+      class="impact-card"
+      type="button"
+      data-impact="smart"
+    >
+      <span class="impact-icon">✦</span>
+
+      <h3>بيئة عمل ذكية وآمنة</h3>
+
+      <p>
+        الجمع بين سرعة الإنجاز وأعلى معايير السلامة.
+      </p>
+
+      <span class="impact-result">
+        بيانات حية · تنبيهات · قرارات دقيقة
+      </span>
+    </button>
+
+  </div>
+
+
+  <!-- الخلاصة -->
+  <div class="impact-summary">
+
+    <p>
+      <span dir="ltr">VISIONGUARD</span>
+      تحوّل التفتيش من عملية يدوية عالية المخاطر
+      إلى عملية
+      <strong>أذكى وأكثر أمانًا ومترابطة رقميًا.</strong>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- تذييل الموقع -->
+<footer class="visionguard-footer">
+
+  <div class="footer-brand">
+
+    <img
+      src="logodron.jpg"
+      alt="شعار VISIONGUARD"
+    >
+
+    <div>
+      <h2>VISIONGUARD</h2>
+      <p>TEAM FISCB</p>
+    </div>
+
+  </div>
+
+  <p class="footer-description">
+    منظومة تفتيش ذكية ومؤتمتة لقطاعات النقل والتخزين
+    في البترول والغاز. الأرقام الظاهرة في لوحة التحكم
+    قيم تجريبية (Placeholder) لأغراض العرض فقط وليست
+    نتائج تشغيلية فعلية.
+  </p>
+
+</footer>
     <script src="" async defer></script>
-   <script>
+  <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  /* =====================================
+     فتح وإغلاق القائمة
+  ===================================== */
+
+  const menu = document.getElementById("menuLinks");
+  const menuButton = document.getElementById("menuBtn");
+
+  window.toggleMenu = function () {
+    if (!menu || !menuButton) return;
+
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+      menuButton.textContent = "✕";
+      menuButton.setAttribute("aria-expanded", "true");
+    } else {
+      menuButton.textContent = "☰";
+      menuButton.setAttribute("aria-expanded", "false");
+    }
+  };
+
+  /* إغلاق القائمة بعد اختيار أي قسم */
+
+  if (menu && menuButton) {
+    const menuLinks = menu.querySelectorAll("a");
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        menu.classList.remove("active");
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+
+  /* =====================================
+     محاكاة تفتيش الدرون
+  ===================================== */
 
   const scene = document.getElementById("drone");
   const drone = document.getElementById("vgDrone");
@@ -480,181 +1240,1045 @@ document.addEventListener("DOMContentLoaded", function () {
   const playButton = document.getElementById("vgPlay");
   const statusText = document.getElementById("vgStatus");
 
-  if (!scene || !drone || !playButton) {
-    console.log("عناصر محاكاة الدرون غير موجودة");
+  /* أزرار الخطوات */
+
+  const stepButtons = document.querySelectorAll(
+    "[data-vg-step]"
+  );
+
+  /* بوكسات شرح الخطوات */
+
+  const stepCards = document.querySelectorAll(
+    "[data-step-card]"
+  );
+
+  if (
+    !scene ||
+    !drone ||
+    !droneLabel ||
+    !warning ||
+    !playButton ||
+    !statusText
+  ) {
+    console.log("تأكدي من معرفات عناصر محاكاة الدرون");
     return;
   }
 
-  const stepButtons = scene.querySelectorAll("[data-vg-step]");
-  const stepCards = scene.querySelectorAll(".vg-card");
 
-  /* أماكن الدرون في الخطوات الست */
+  /* =====================================
+     أماكن الدرون في الخطوات الست
+  ===================================== */
+
   const positions = [
-    { x: 96,  y: 470 },
-    { x: 272, y: 332 },
-    { x: 464, y: 205 },
-    { x: 576, y: 275 },
-    { x: 672, y: 168 },
-    { x: 112, y: 120 }
+    {
+      x: 96,
+      y: 470
+    },
+
+    {
+      x: 272,
+      y: 332
+    },
+
+    {
+      x: 464,
+      y: 205
+    },
+
+    {
+      x: 576,
+      y: 275
+    },
+
+    {
+      x: 672,
+      y: 168
+    },
+
+    {
+      x: 112,
+      y: 120
+    }
   ];
+
+
+  /* =====================================
+     نص حالة كل خطوة
+  ===================================== */
 
   const messages = [
     "المفتش يحدد المنطقة الخطرة",
+
     "إرسال الدرون بدلًا من المفتش",
+
     "مسح الخزانات والأنابيب والمعدات",
+
     "تدفق البيانات إلى لوحة التحكم",
+
     "اكتشاف حالة غير طبيعية",
+
     "المفتش يقرر من موقع آمن"
   ];
 
+
+  /* =====================================
+     متغيرات المحاكاة
+  ===================================== */
+
   let currentStep = 0;
+
   let simulationInterval = null;
+
   let isPlaying = false;
 
-  /* تحريك الدرون بشكل تدريجي */
-  function moveDrone(targetX, targetY) {
+  let animationFrame = null;
+
+
+  /* =====================================
+     معرفة مكان الدرون الحالي
+  ===================================== */
+
+  function getCurrentDronePosition() {
     const currentTransform =
-      drone.getAttribute("transform") || "translate(96 470)";
+      drone.getAttribute("transform") ||
+      "translate(96 470)";
 
-    const numbers = currentTransform.match(/-?\d+(\.\d+)?/g);
+    const numbers = currentTransform.match(
+      /-?\d+(\.\d+)?/g
+    );
 
-    const startX = numbers ? Number(numbers[0]) : 96;
-    const startY = numbers ? Number(numbers[1]) : 470;
+    if (!numbers || numbers.length < 2) {
+      return {
+        x: positions[currentStep].x,
+        y: positions[currentStep].y
+      };
+    }
+
+    return {
+      x: Number(numbers[0]),
+      y: Number(numbers[1])
+    };
+  }
+
+
+  /* =====================================
+     تحريك الدرون بشكل تدريجي
+  ===================================== */
+
+  function moveDrone(targetX, targetY) {
+
+    /* إيقاف أي حركة سابقة */
+
+    if (animationFrame) {
+      cancelAnimationFrame(animationFrame);
+    }
+
+    const startPosition =
+      getCurrentDronePosition();
+
+    const startX = startPosition.x;
+    const startY = startPosition.y;
 
     const duration = 1200;
     const startTime = performance.now();
 
-    function animateDrone(time) {
-      const elapsed = time - startTime;
-      const progress = Math.min(elapsed / duration, 1);
 
-      /* يجعل الحركة ناعمة */
-      const smooth =
-        progress * progress * (3 - 2 * progress);
+    function animateDrone(currentTime) {
+
+      const elapsed =
+        currentTime - startTime;
+
+      const progress =
+        Math.min(elapsed / duration, 1);
+
+      /* تنعيم حركة الدرون */
+
+      const smoothProgress =
+        progress *
+        progress *
+        (3 - 2 * progress);
+
 
       const newX =
-        startX + (targetX - startX) * smooth;
+        startX +
+        (targetX - startX) *
+        smoothProgress;
+
 
       const newY =
-        startY + (targetY - startY) * smooth;
+        startY +
+        (targetY - startY) *
+        smoothProgress;
+
 
       drone.setAttribute(
         "transform",
-        "translate(" + newX + " " + newY + ")"
+        "translate(" +
+        newX +
+        " " +
+        newY +
+        ")"
       );
 
+
       if (progress < 1) {
-        requestAnimationFrame(animateDrone);
+        animationFrame =
+          requestAnimationFrame(
+            animateDrone
+          );
+      } else {
+        animationFrame = null;
       }
     }
 
-    requestAnimationFrame(animateDrone);
+
+    animationFrame =
+      requestAnimationFrame(
+        animateDrone
+      );
   }
 
-  /* عرض خطوة معينة */
+
+  /* =====================================
+     تفعيل خطوة معينة
+  ===================================== */
+
   function showStep(stepNumber) {
+
     currentStep = stepNumber;
+
+
+    /* تحريك الدرون إلى موقع الخطوة */
 
     moveDrone(
       positions[stepNumber].x,
       positions[stepNumber].y
     );
 
-    /* تغيير زر الخطوة النشط */
-    stepButtons.forEach(function (button, index) {
-      button.classList.toggle(
-        "vg-active",
-        index === stepNumber
-      );
-    });
 
-    /* تغيير كرت الشرح النشط */
-    stepCards.forEach(function (card, index) {
-      card.classList.toggle(
-        "vg-active",
-        index === stepNumber
-      );
-    });
+    /* تفعيل زر الخطوة الحالية */
+
+    stepButtons.forEach(
+      function (button) {
+
+        const buttonNumber =
+          Number(
+            button.getAttribute(
+              "data-vg-step"
+            )
+          );
+
+        button.classList.toggle(
+          "vg-active",
+          buttonNumber === stepNumber
+        );
+
+        button.setAttribute(
+          "aria-pressed",
+          buttonNumber === stepNumber
+            ? "true"
+            : "false"
+        );
+      }
+    );
+
+
+    /* تفعيل البوكس المرتبط بالخطوة */
+
+    stepCards.forEach(
+      function (card) {
+
+        const cardNumber =
+          Number(
+            card.getAttribute(
+              "data-step-card"
+            )
+          );
+
+        card.classList.toggle(
+          "active",
+          cardNumber === stepNumber
+        );
+      }
+    );
+
 
     /* تغيير حالة المهمة */
-    statusText.textContent = messages[stepNumber];
 
-    /* يظهر التنبيه في الخطوة الخامسة */
+    statusText.textContent =
+      messages[stepNumber];
+
+
+    /* إظهار التنبيه في الخطوة الخامسة */
+
     if (stepNumber === 4) {
-      warning.setAttribute("visibility", "visible");
+
+      warning.setAttribute(
+        "visibility",
+        "visible"
+      );
+
     } else if (stepNumber < 4) {
-      warning.setAttribute("visibility", "hidden");
+
+      warning.setAttribute(
+        "visibility",
+        "hidden"
+      );
     }
 
-    /* يجعل اسم الدرون لا يخرج من المخطط */
+
+    /* المحافظة على اسم الدرون داخل المخطط */
+
     if (positions[stepNumber].x > 590) {
-      droneLabel.setAttribute("x", "-29");
-      droneLabel.setAttribute("text-anchor", "end");
+
+      droneLabel.setAttribute(
+        "x",
+        "-29"
+      );
+
+      droneLabel.setAttribute(
+        "text-anchor",
+        "end"
+      );
+
     } else {
-      droneLabel.setAttribute("x", "29");
-      droneLabel.setAttribute("text-anchor", "start");
+
+      droneLabel.setAttribute(
+        "x",
+        "29"
+      );
+
+      droneLabel.setAttribute(
+        "text-anchor",
+        "start"
+      );
     }
   }
 
-  /* الضغط على أزرار الخطوات */
-  stepButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      stopSimulation();
 
-      const selectedStep =
-        Number(button.getAttribute("data-vg-step"));
+  /* =====================================
+     إيقاف المحاكاة
+  ===================================== */
 
-      showStep(selectedStep);
-    });
-  });
+  function stopSimulation(
+    buttonText = "▷ تشغيل"
+  ) {
 
-  /* تشغيل المحاكاة تلقائيًا */
+    clearInterval(
+      simulationInterval
+    );
+
+    simulationInterval = null;
+
+    isPlaying = false;
+
+    playButton.textContent =
+      buttonText;
+  }
+
+
+  /* =====================================
+     تشغيل المحاكاة تلقائيًا
+  ===================================== */
+
   function startSimulation() {
+
+    /* إذا كانت تعمل، يتم إيقافها */
+
     if (isPlaying) {
-      stopSimulation();
+
+      stopSimulation(
+        "▷ متابعة"
+      );
+
       return;
     }
 
-    isPlaying = true;
-    currentStep = 0;
 
-    playButton.textContent = "Ⅱ إيقاف";
+    /* إذا انتهت الخطوة السادسة،
+       تبدأ من الخطوة الأولى */
+
+    if (
+      currentStep ===
+      positions.length - 1
+    ) {
+
+      currentStep = 0;
+    }
+
+
+    isPlaying = true;
+
+    playButton.textContent =
+      "Ⅱ إيقاف";
+
+
+    /* عرض الخطوة الحالية */
+
     showStep(currentStep);
 
-    simulationInterval = setInterval(function () {
-      currentStep++;
 
-      if (currentStep >= positions.length) {
-        stopSimulation();
+    /* الانتقال بين الخطوات تلقائيًا */
 
-        playButton.textContent = "↻ إعادة التشغيل";
-        statusText.textContent = "اكتملت المحاكاة";
+    simulationInterval =
+      setInterval(
+        function () {
 
-        return;
+          currentStep++;
+
+
+          /* عند انتهاء الخطوة السادسة */
+
+          if (
+            currentStep >=
+            positions.length
+          ) {
+
+            currentStep =
+              positions.length - 1;
+
+            stopSimulation(
+              "↻ إعادة التشغيل"
+            );
+
+            statusText.textContent =
+              "اكتملت المحاكاة";
+
+            return;
+          }
+
+
+          showStep(
+            currentStep
+          );
+
+        },
+        3000
+      );
+  }
+
+
+  /* =====================================
+     الضغط على زر التشغيل
+  ===================================== */
+
+  playButton.addEventListener(
+    "click",
+    startSimulation
+  );
+
+
+  /* =====================================
+     الضغط اليدوي على أي خطوة
+  ===================================== */
+
+  stepButtons.forEach(
+    function (button) {
+
+      button.addEventListener(
+        "click",
+        function () {
+
+          /* إيقاف التشغيل التلقائي */
+
+          stopSimulation(
+            "▷ تشغيل"
+          );
+
+
+          /* قراءة رقم الخطوة */
+
+          const selectedStep =
+            Number(
+              button.getAttribute(
+                "data-vg-step"
+              )
+            );
+
+
+          /* عرض الخطوة المختارة */
+
+          showStep(
+            selectedStep
+          );
+        }
+      );
+    }
+  );
+
+
+  /* =====================================
+     الضغط على البوكس نفسه
+     ينقل الدرون إلى خطوته
+  ===================================== */
+
+  stepCards.forEach(
+    function (card) {
+
+      card.addEventListener(
+        "click",
+        function () {
+
+          stopSimulation(
+            "▷ تشغيل"
+          );
+
+
+          const selectedCard =
+            Number(
+              card.getAttribute(
+                "data-step-card"
+              )
+            );
+
+
+          showStep(
+            selectedCard
+          );
+        }
+      );
+    }
+  );
+
+
+  /* =====================================
+     إيقاف المحاكاة عند مغادرة الصفحة
+  ===================================== */
+
+  document.addEventListener(
+    "visibilitychange",
+    function () {
+
+      if (
+        document.hidden &&
+        isPlaying
+      ) {
+
+        stopSimulation(
+          "▷ متابعة"
+        );
       }
+    }
+  );
 
-      showStep(currentStep);
-    }, 2500);
-  }
 
-  /* إيقاف المحاكاة */
-  function stopSimulation() {
-    clearInterval(simulationInterval);
+  /* =====================================
+     تشغيل الحالة الأولى عند فتح الصفحة
+  ===================================== */
 
-    simulationInterval = null;
-    isPlaying = false;
-
-    playButton.textContent = "▷ تشغيل";
-  }
-
-  playButton.addEventListener("click", startSimulation);
-
-  /* تشغيل الخطوة الأولى عند فتح الصفحة */
   showStep(0);
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  /* عناصر لوحة التحكم */
+  const dashboard = document.getElementById("dashboard");
+  const startButton = document.getElementById("dbStartButton");
+  const inspectionStatus = document.getElementById("dbInspectionStatus");
+  const statusDot = document.getElementById("dbStatusDot");
+
+  const liveView = document.getElementById("dbLiveView");
+  const scanLine = document.getElementById("dbScanLine");
+  const anomaly = document.getElementById("dbAnomaly");
+  const notice = document.getElementById("dbNotice");
+
+  const progressNumber = document.getElementById("dbProgressNumber");
+  const progressFill = document.getElementById("dbProgressFill");
+  const progressTrack = document.getElementById("dbProgressTrack");
+
+  const temperatureText = document.getElementById("dbTemperature");
+  const gasText = document.getElementById("dbGasReading");
+  const imagesText = document.getElementById("dbImagesCount");
+  const connectionText = document.getElementById("dbConnection");
+  const batteryText = document.getElementById("dbBatteryText");
+
+  const altitudeText = document.getElementById("dbAltitude");
+  const speedText = document.getElementById("dbSpeed");
+
+  const reportButton = document.getElementById("dbReportButton");
+
+  const dashboardCards = document.querySelectorAll(
+    "[data-dashboard-card]"
+  );
+
+  const alertTime1 = document.getElementById("dbAlertTime1");
+  const alertTime2 = document.getElementById("dbAlertTime2");
+  const alertTime3 = document.getElementById("dbAlertTime3");
+
+
+  /* التأكد من وجود لوحة التحكم */
+  if (!dashboard || !startButton) {
+    console.log("عناصر لوحة التحكم غير موجودة");
+    return;
+  }
+
+
+  /* متغيرات المحاكاة */
+  let inspectionTimer = null;
+  let isInspectionRunning = false;
+
+  let progress = 0;
+  let temperature = 42;
+  let images = 0;
+  let battery = 76;
+  let seconds = 0;
+
+
+  /* رسائل البوكسات */
+  const cardMessages = {
+    temperature:
+      "درجة حرارة السطح الحالية تجريبية، ويتم تحديثها أثناء التفتيش.",
+
+    gas:
+      "قراءة الغاز ضمن الحدود الطبيعية ولا يوجد إنذار غاز حاليًا.",
+
+    images:
+      "هذا العدد يمثل الصور التي التقطتها الدرون أثناء المحاكاة.",
+
+    connection:
+      "جودة الاتصال بين الدرون ولوحة التحكم مستقرة.",
+
+    drone:
+      "الدرون VG-DRONE-01 تنفذ مسار تفتيش القطاع B.",
+
+    alerts:
+      "تعرض هذه القائمة آخر التنبيهات التي وصلت من مهمة التفتيش.",
+
+    history:
+      "يعرض هذا القسم عمليات التفتيش السابقة وحالة كل عملية."
+  };
+
+
+  /* إظهار رسالة تفاعلية */
+  function showNotice(message) {
+    if (!notice) return;
+
+    notice.textContent = message;
+    notice.classList.add("show");
+
+    clearTimeout(notice.hideTimer);
+
+    notice.hideTimer = setTimeout(function () {
+      notice.classList.remove("show");
+    }, 3500);
+  }
+
+
+  /* تحويل الثواني إلى وقت */
+  function formatTime(totalSeconds) {
+    const minutes = Math.floor(totalSeconds / 60);
+    const remainingSeconds = totalSeconds % 60;
+
+    return (
+      String(minutes).padStart(2, "0") +
+      ":" +
+      String(remainingSeconds).padStart(2, "0")
+    );
+  }
+
+
+  /* تحديث شريط التقدم */
+  function updateProgress() {
+    progressNumber.textContent = progress + "%";
+    progressFill.style.width = progress + "%";
+
+    progressTrack.setAttribute(
+      "aria-valuenow",
+      progress
+    );
+  }
+
+
+  /* تحديث بيانات لوحة التحكم */
+  function updateDashboardData() {
+
+    /* زيادة تقدم التفتيش */
+    progress += Math.floor(Math.random() * 3) + 1;
+
+    if (progress > 100) {
+      progress = 100;
+    }
+
+
+    /* زيادة عدد الصور */
+    images += Math.floor(Math.random() * 7) + 3;
+
+
+    /* تغيير درجة الحرارة */
+    const temperatureChange =
+      Math.random() > 0.5 ? 1 : -1;
+
+    temperature += temperatureChange * 0.2;
+
+    if (temperature < 41) {
+      temperature = 41;
+    }
+
+    if (temperature > 49) {
+      temperature = 49;
+    }
+
+
+    /* خفض البطارية تدريجيًا */
+    if (seconds % 8 === 0 && battery > 15) {
+      battery--;
+    }
+
+
+    /* تحديث السرعة والارتفاع */
+    const altitude =
+      13.5 + Math.random() * 2;
+
+    const speed =
+      1.1 + Math.random() * 1.2;
+
+
+    /* عرض القيم الجديدة */
+    temperatureText.textContent =
+      temperature.toFixed(1) + "°C";
+
+    imagesText.textContent = images;
+
+    batteryText.textContent =
+      "البطارية: " + battery + "%";
+
+    altitudeText.textContent =
+      altitude.toFixed(1);
+
+    speedText.textContent =
+      speed.toFixed(1);
+
+    connectionText.textContent = "قوية";
+
+    updateProgress();
+
+
+    /* تغيير قراءة الغاز حسب نسبة التقدم */
+    if (progress < 65) {
+      gasText.textContent = "ضمن الحد الطبيعي";
+      gasText.style.color = "#f3f8fa";
+    } else if (progress < 85) {
+      gasText.textContent = "تتم المراقبة";
+      gasText.style.color = "#ffb12b";
+    } else {
+      gasText.textContent = "ضمن الحد الآمن";
+      gasText.style.color = "#28d3d5";
+    }
+
+
+    /* ظهور نقطة الفحص بعد وصول التقدم إلى 40% */
+    if (progress >= 40) {
+      anomaly.classList.add("selected");
+    }
+
+
+    /* تحديث أوقات التنبيهات */
+    alertTime1.textContent = formatTime(seconds);
+    alertTime2.textContent = formatTime(
+      Math.max(0, seconds - 12)
+    );
+    alertTime3.textContent = formatTime(
+      Math.max(0, seconds - 25)
+    );
+
+
+    /* إنهاء التفتيش عند 100% */
+    if (progress >= 100) {
+      finishInspection();
+    }
+  }
+
+
+  /* بدء التفتيش */
+  function startInspection() {
+
+    if (isInspectionRunning) {
+      pauseInspection();
+      return;
+    }
+
+
+    /* إذا انتهت المهمة تبدأ من جديد */
+    if (progress >= 100) {
+      resetInspection();
+    }
+
+
+    isInspectionRunning = true;
+
+    startButton.textContent = "Ⅱ إيقاف مؤقت";
+
+    inspectionStatus.textContent =
+      "حالة التفتيش · قيد التنفيذ";
+
+    statusDot.classList.remove("completed");
+    statusDot.classList.add("running");
+
+    liveView.classList.add("running");
+    scanLine.classList.add("running");
+
+    connectionText.textContent = "قوية";
+    speedText.textContent = "1.6";
+
+    showNotice(
+      "بدأت مهمة التفتيش، ويتم الآن استقبال البيانات الحية."
+    );
+
+
+    inspectionTimer = setInterval(function () {
+      seconds++;
+
+      updateDashboardData();
+    }, 700);
+  }
+
+
+  /* إيقاف التفتيش مؤقتًا */
+  function pauseInspection() {
+    clearInterval(inspectionTimer);
+
+    inspectionTimer = null;
+    isInspectionRunning = false;
+
+    startButton.textContent = "▷ متابعة التفتيش";
+
+    inspectionStatus.textContent =
+      "حالة التفتيش · متوقف مؤقتًا";
+
+    statusDot.classList.remove("running");
+
+    liveView.classList.remove("running");
+    scanLine.classList.remove("running");
+
+    speedText.textContent = "0.0";
+
+    showNotice(
+      "تم إيقاف مهمة التفتيش مؤقتًا."
+    );
+  }
+
+
+  /* انتهاء التفتيش */
+  function finishInspection() {
+    clearInterval(inspectionTimer);
+
+    inspectionTimer = null;
+    isInspectionRunning = false;
+
+    progress = 100;
+    updateProgress();
+
+    startButton.textContent = "↻ إعادة التفتيش";
+
+    inspectionStatus.textContent =
+      "حالة التفتيش · مكتمل";
+
+    statusDot.classList.remove("running");
+    statusDot.classList.add("completed");
+
+    liveView.classList.remove("running");
+    scanLine.classList.remove("running");
+
+    speedText.textContent = "0.0";
+
+    showNotice(
+      "اكتملت مهمة التفتيش بنجاح، ويمكن الآن إصدار التقرير."
+    );
+  }
+
+
+  /* إعادة القيم إلى البداية */
+  function resetInspection() {
+    clearInterval(inspectionTimer);
+
+    inspectionTimer = null;
+    isInspectionRunning = false;
+
+    progress = 0;
+    temperature = 42;
+    images = 0;
+    battery = 76;
+    seconds = 0;
+
+    progressNumber.textContent = "0%";
+    progressFill.style.width = "0%";
+    progressTrack.setAttribute(
+      "aria-valuenow",
+      "0"
+    );
+
+    temperatureText.textContent = "42°C";
+    imagesText.textContent = "0";
+    batteryText.textContent = "البطارية: 76%";
+    altitudeText.textContent = "14.2";
+    speedText.textContent = "0.0";
+    gasText.textContent = "ضمن الحد الطبيعي";
+    connectionText.textContent = "في الانتظار";
+
+    inspectionStatus.textContent =
+      "حالة التفتيش · جاهز للبدء";
+
+    startButton.textContent = "▷ بدء التفتيش";
+
+    statusDot.classList.remove(
+      "running",
+      "completed"
+    );
+
+    liveView.classList.remove("running");
+    scanLine.classList.remove("running");
+    anomaly.classList.remove("selected");
+  }
+
+
+  /* الضغط على زر بدء التفتيش */
+  startButton.addEventListener(
+    "click",
+    startInspection
+  );
+
+
+  /* التفاعل مع نقطة الفحص */
+  anomaly.addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    anomaly.classList.toggle("selected");
+
+    if (anomaly.classList.contains("selected")) {
+      showNotice(
+        "تم تحديد الخزان T-04: توجد نقطة تحتاج إلى مراجعة المفتش."
+      );
+    } else {
+      showNotice(
+        "تم إغلاق تفاصيل نقطة الفحص."
+      );
+    }
+  });
+
+
+  /* التفاعل مع البث المباشر */
+  liveView.addEventListener("click", function (event) {
+    if (event.target.closest("#dbAnomaly")) {
+      return;
+    }
+
+    liveView.classList.toggle("selected");
+
+    showNotice(
+      "البث المباشر من VG-DRONE-01 بدقة 4K. الارتفاع " +
+      altitudeText.textContent +
+      " متر، والسرعة " +
+      speedText.textContent +
+      " متر/ثانية."
+    );
+  });
+
+
+  /* تشغيل البث بواسطة Enter */
+  liveView.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      liveView.click();
+    }
+  });
+
+
+  /* التفاعل مع جميع البوكسات */
+  dashboardCards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      const cardName =
+        card.getAttribute("data-dashboard-card");
+
+      dashboardCards.forEach(function (otherCard) {
+        if (otherCard !== card) {
+          otherCard.classList.remove("active");
+        }
+      });
+
+      card.classList.toggle("active");
+
+      if (cardMessages[cardName]) {
+        showNotice(cardMessages[cardName]);
+      }
+    });
+
+
+    /* تشغيل البوكس بواسطة Enter */
+    card.addEventListener("keydown", function (event) {
+      if (
+        event.key === "Enter" &&
+        card.tagName !== "BUTTON"
+      ) {
+        card.click();
+      }
+    });
+  });
+
+
+  /* إصدار تقرير تجريبي */
+  reportButton.addEventListener(
+    "click",
+    function (event) {
+      event.stopPropagation();
+
+      const reportContent =
+`VISIONGUARD - تقرير التفتيش
+
+رقم المهمة: INS-2042
+الدرون: VG-DRONE-01
+الموقع: القطاع B - حقل الخزانات
+حالة المهمة: ${progress >= 100 ? "مكتملة" : "قيد التنفيذ"}
+تقدم التفتيش: ${progress}%
+درجة حرارة السطح: ${temperature.toFixed(1)}°C
+قراءة الغاز: ${gasText.textContent}
+عدد الصور: ${images}
+جودة الاتصال: ${connectionText.textContent}
+البطارية: ${battery}%
+
+الملاحظة:
+تم تحديد نقطة تحتاج إلى فحص في الخزان T-04.
+هذه بيانات تجريبية لأغراض العرض فقط.`;
+
+      const reportFile = new Blob(
+        [reportContent],
+        {
+          type: "text/plain;charset=utf-8"
+        }
+      );
+
+      const reportUrl =
+        URL.createObjectURL(reportFile);
+
+      const downloadLink =
+        document.createElement("a");
+
+      downloadLink.href = reportUrl;
+
+      downloadLink.download =
+        "VISIONGUARD-Inspection-Report.txt";
+
+      document.body.appendChild(
+        downloadLink
+      );
+
+      downloadLink.click();
+      downloadLink.remove();
+
+      URL.revokeObjectURL(reportUrl);
+
+      showNotice(
+        "تم إصدار تقرير التفتيش وتحميله."
+      );
+    }
+  );
+
+
+  /* وضع القيم في حالتها الأولى */
+  resetInspection();
+
+});
+</script>
   </body>
   <script>
   function toggleMenu() {
