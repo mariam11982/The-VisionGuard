@@ -18,6 +18,57 @@ body {
   color: #eafcff;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: #03111b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  font-family: "Merriweather", serif;
+  color: #eafcff;
+
+  background-color: #03111b;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(3, 17, 29, 0.48) 0%,
+      rgba(3, 17, 29, 0.7) 50%,
+      #03111b 100%
+    ),
+    linear-gradient(
+      rgba(69, 188, 199, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(69, 188, 199, 0.06) 1px,
+      transparent 1px
+    ),
+    url("images/imagee.png");
+
+  background-size:
+    100% 1400px,
+    55px 55px,
+    55px 55px,
+    100% 1400px;
+
+  background-position:
+    top center,
+    top center,
+    top center,
+    top center;
+
+  background-repeat:
+    no-repeat,
+    repeat,
+    repeat,
+    no-repeat;
+}
 .logo {
   background-color: rgba(3, 24, 40, 0.95);
 
@@ -49,10 +100,10 @@ body {
 }
 
 img[src*="logoteamfiscb"] {
-  width: 80px !important;
-  height: 80px !important;
-  max-width: 80px !important;
-  max-height: 80px !important;
+  width: 140px !important;
+  height: 140px !important;
+  max-width: 140px !important;
+  max-height: 140px !important;
   object-fit: contain !important;
 }
 .logo-name h1 {
@@ -2931,4 +2982,26 @@ button.db-wide-card {
   .footer-description {
     font-size: 14px;
   }
+}
+.logo,
+.company,
+.visionguard,
+.vision,
+.visionp {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+hr {
+  display: none;
+}
+img[src*="logoteamfiscb"] {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: contain !important;
+
+  background: transparent !important;
+  mix-blend-mode: screen;
 }

@@ -94,17 +94,33 @@
     <br />
     <br />
 
-  <div class="buttonvis">
-    <button type="button">استكشف الحل ⟵</button>
+<!-- زر الانتقال إلى قسم الحل -->
+<div class="buttonvis">
+  <button
+    type="button"
+    onclick="document.getElementById('solution').scrollIntoView({ behavior: 'smooth' })"
+  >
+    استكشف الحل ←
+  </button>
 </div>
 
-    <br />
+<br>
 
-    <div class="buttonvision">
-      <button type="">شاهد تفتيش الدرون</button>
-    </div>
-    <br />
-    <br />
+<!-- زر الانتقال إلى مشهد الدرون -->
+<div class="buttonvision">
+  <button
+    type="button"
+    onclick="document.getElementById('drone').scrollIntoView({ behavior: 'smooth' })"
+  >
+    شاهد تفتيش الدرون
+
+
+
+  </button>
+  <br>
+  <br>
+  <br>
+</div>
 
     <div class="vision-table">
       <div class="row">
@@ -141,7 +157,9 @@
   <p class="section-number">01 — المشكلة</p>
 
   <h2 class="problem-title">
-    التفتيش اليوم بطيء و
+   
+   التفتيش اليوم 
+    <span> بطيء </span>و  
     <span>عالي المخاطر</span>
   </h2>
   
@@ -158,7 +176,7 @@
 
   <div class="problem-image">
     <img
-      src="imges/inspection-worker.jpg"
+      src="images/image.png"
       alt="مفتش يعمل في منطقة صناعية خطرة"
     >
 
@@ -578,7 +596,7 @@
   <!-- الصورة -->
   <div class="inspector-image">
     <img
-      src="imges/inspector-control-room.jpg"
+      src="images/photo.jpg"
       alt="المفتش يراقب الدرون من غرفة التحكم"
     >
   </div>
