@@ -1,10 +1,7 @@
 body {
   background-image:
-    linear-gradient(
-      rgba(3, 17, 29, 0.92),
-      rgba(5, 31, 46, 0.82)
-    ),
-    url("imges/masnaaa2.jpg");
+    linear-gradient(rgba(3, 17, 29, 0.92), rgba(5, 31, 46, 0.82)),
+    url("images/logodron.jpg");
 
   background-size: cover;
   background-position: center;
@@ -13,11 +10,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 200;
 
   color: #eafcff;
 }
@@ -41,10 +37,10 @@ body {
 
 .logo-name {
   position: absolute;
-  
-  top: 7%;
+
+  top: 6%;
   transform: translateY(-30%);
-   left: 85%;
+  left: 83%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +48,7 @@ body {
   margin: 0;
 }
 
-img[src*="logodron"] {
+img[src*="logoteamfiscb"] {
   width: 80px !important;
   height: 80px !important;
   max-width: 80px !important;
@@ -160,7 +156,6 @@ img[src*="logodron"] {
   gap: 0;
 
   color: #ffffff;
-  background-color: rgba(5, 36, 55, 0.86);
 
   box-shadow: inset 0 0 25px rgba(33, 199, 223, 0.09);
 }
@@ -172,9 +167,6 @@ img[src*="logodron"] {
   padding: 15px 30px;
 
   color: #eafcff;
-  background-color: rgba(6, 43, 63, 0.86);
-
-  box-shadow: inset 0 0 20px rgba(33, 199, 223, 0.08);
 }
 
 .vision {
@@ -184,9 +176,6 @@ img[src*="logodron"] {
   padding: 15px 30px;
 
   color: #ffffff;
-  background-color: rgba(5, 36, 55, 0.86);
-
-  box-shadow: inset 0 0 20px rgba(33, 199, 223, 0.08);
 }
 .vision-table {
   margin-left: auto !important;
@@ -199,9 +188,6 @@ img[src*="logodron"] {
   padding: 15px 30px;
 
   color: #ffffff;
-  background-color: rgba(6, 43, 63, 0.86);
-
-  box-shadow: inset 0 0 20px rgba(33, 199, 223, 0.08);
 }
 
 .buttonvis button {
@@ -211,8 +197,7 @@ img[src*="logodron"] {
   padding: 15px 160px;
 
   color: #ffffff;
-  background-color: #073b58;
-
+  background-color: #21c7df;
   border: 3px solid #21c7df;
   border-radius: 20px;
 
@@ -334,9 +319,7 @@ img[src*="logodron"] {
   pointer-events: auto;
 }
 
-
-*/ قسم المشكله /
-html {
+*/ قسم المشكله / html {
   scroll-behavior: smooth;
 }
 
@@ -465,7 +448,6 @@ html {
     font-size: 14px;
   }
 }
-
 
 .problem-cards {
   display: grid;
@@ -1521,8 +1503,7 @@ body {
   border: 1px solid #324955;
   border-radius: 22px;
 
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .inspector-image {
@@ -1543,9 +1524,7 @@ body {
   object-fit: cover;
   object-position: center;
 
-  filter:
-    brightness(0.75)
-    contrast(1.05);
+  filter: brightness(0.75) contrast(1.05);
 }
 
 .inspector-content {
@@ -1612,7 +1591,7 @@ body {
   .inspector-status {
     font-size: 14px;
   }
-}/* بوكسات خطوات المحاكاة */
+} /* بوكسات خطوات المحاكاة */
 
 .vg-step-cards {
   display: grid;
@@ -1782,7 +1761,6 @@ body {
   line-height: 2;
 }
 
-
 /* اللوحة الرئيسية */
 
 .db-main-panel {
@@ -1793,10 +1771,8 @@ body {
   border: 1px solid #2c434f;
   border-radius: 22px;
 
-  box-shadow:
-    inset 0 0 25px rgba(33, 199, 223, 0.04);
+  box-shadow: inset 0 0 25px rgba(33, 199, 223, 0.04);
 }
-
 
 /* حالة التفتيش */
 
@@ -1828,8 +1804,7 @@ body {
 .db-status-dot.running {
   background: #22ced0;
 
-  box-shadow:
-    0 0 12px rgba(34, 206, 208, 0.75);
+  box-shadow: 0 0 12px rgba(34, 206, 208, 0.75);
 
   animation: dbPulse 1.2s infinite;
 }
@@ -1859,7 +1834,6 @@ body {
 
   transform: translateY(-2px);
 }
-
 
 /* معلومات المهمة */
 
@@ -1893,7 +1867,6 @@ body {
   color: #ff5d64;
 }
 
-
 /* البث المباشر */
 
 .db-live-view {
@@ -1912,8 +1885,7 @@ body {
 
   cursor: pointer;
 
-  box-shadow:
-    inset 0 0 35px rgba(31, 199, 204, 0.04);
+  box-shadow: inset 0 0 35px rgba(31, 199, 204, 0.04);
 }
 
 .db-live-view:hover {
@@ -1925,15 +1897,8 @@ body {
   inset: 0;
 
   background-image:
-    linear-gradient(
-      rgba(46, 72, 84, 0.3) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(46, 72, 84, 0.3) 1px,
-      transparent 1px
-    );
+    linear-gradient(rgba(46, 72, 84, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 72, 84, 0.3) 1px, transparent 1px);
 
   background-size: 10% 20%;
 }
@@ -1954,15 +1919,13 @@ body {
     transparent
   );
 
-  box-shadow:
-    0 0 25px rgba(35, 215, 217, 0.5);
+  box-shadow: 0 0 25px rgba(35, 215, 217, 0.5);
 }
 
 .db-scan-line.running {
   opacity: 1;
 
-  animation:
-    dbScan 3s linear infinite;
+  animation: dbScan 3s linear infinite;
 }
 
 .db-live-badge {
@@ -2051,8 +2014,7 @@ body {
 .db-anomaly.selected {
   background: rgba(255, 169, 31, 0.17);
 
-  box-shadow:
-    0 0 25px rgba(255, 169, 31, 0.45);
+  box-shadow: 0 0 25px rgba(255, 169, 31, 0.45);
 }
 
 .db-tank-shape {
@@ -2099,7 +2061,6 @@ body {
   letter-spacing: 1px;
 }
 
-
 /* رسالة التفاعل */
 
 .db-notice {
@@ -2120,7 +2081,6 @@ body {
 .db-notice.show {
   display: block;
 }
-
 
 /* تقدم التفتيش */
 
@@ -2173,20 +2133,14 @@ body {
   width: 0;
   height: 100%;
 
-  background: linear-gradient(
-    90deg,
-    #1ccacc,
-    #7be7da
-  );
+  background: linear-gradient(90deg, #1ccacc, #7be7da);
 
   border-radius: 20px;
 
-  box-shadow:
-    0 0 12px rgba(31, 207, 209, 0.35);
+  box-shadow: 0 0 12px rgba(31, 207, 209, 0.35);
 
   transition: width 0.5s ease;
 }
-
 
 /* البيانات المجمعة */
 
@@ -2281,7 +2235,6 @@ body {
   font-size: 14px;
 }
 
-
 /* البوكسات السفلية */
 
 .db-wide-card {
@@ -2316,8 +2269,7 @@ button.db-wide-card {
 .db-wide-card.active {
   border-color: #24cdd0;
 
-  box-shadow:
-    inset 0 0 20px rgba(36, 205, 208, 0.05);
+  box-shadow: inset 0 0 20px rgba(36, 205, 208, 0.05);
 }
 
 .db-wide-card-title {
@@ -2337,7 +2289,6 @@ button.db-wide-card {
 .db-drone-card > span:last-child {
   color: #899aa4;
 }
-
 
 /* التنبيهات */
 
@@ -2385,7 +2336,6 @@ button.db-wide-card {
 
   font-family: monospace;
 }
-
 
 /* سجل التفتيش */
 
@@ -2437,7 +2387,6 @@ button.db-wide-card {
   background: #25ced0;
 }
 
-
 /* الحركات */
 
 @keyframes dbPulse {
@@ -2457,7 +2406,6 @@ button.db-wide-card {
     top: calc(100% - 10px);
   }
 }
-
 
 /* الجوال */
 
@@ -2713,7 +2661,6 @@ button.db-wide-card {
   color: #42d9d6;
 }
 
-
 /* بوكسات الأثر */
 
 .impact-cards {
@@ -2829,7 +2776,6 @@ button.db-wide-card {
   opacity: 1;
 }
 
-
 /* خلاصة المشروع */
 
 .impact-summary {
@@ -2862,7 +2808,6 @@ button.db-wide-card {
   color: #42d9d6;
   font-weight: normal;
 }
-
 
 /* تذييل الموقع */
 
@@ -2913,7 +2858,6 @@ button.db-wide-card {
   font-size: 16px;
   line-height: 2;
 }
-
 
 /* الجوال */
 
