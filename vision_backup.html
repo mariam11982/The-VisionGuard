@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
   <head>
+    <button class="print-pdf-btn" onclick="printVisionGuard()">
+      <span class="print-icon">🖨️</span>
+      حفظ/طباعة PDF
+    </button>
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+13px&display=swap" rel="stylesheet">
@@ -14,6 +19,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <div id="idea-pdf"></div>
     <div class="logo">
       <img
         src="images/logoteamfiscb.jpg"
@@ -23,9 +30,6 @@
       />
 
       <div class="logo-name">
-        <h1 style="color: rgba(217, 235, 241, 0.619)">VISIONGUARD</h1>
-        <div class="subtitle">TEAM . FISCB
-        </div>
       </div>
 
       <div class="mnue-btn">
@@ -90,6 +94,130 @@
         >
       </p>
     </div>
+
+    <div class="print-report">
+
+    <!-- رأس التقرير -->
+
+    <div class="report-header">
+
+        <div class="report-logo">
+            VISION<span>GUARD</span>
+        </div>
+
+        <div class="report-title">
+            تقرير الفحص 
+        </div>
+
+    </div>
+
+
+    <!-- معلومات الفحص -->
+
+    <div class="report-info">
+
+        <div>
+            <strong>اسم المنشأة:</strong>
+            مصنع البترول والغاز
+        </div>
+
+        <div>
+            <strong>رقم الفحص:</strong>
+            VG-2026-00124
+        </div>
+
+        <div>
+            <strong>تاريخ الفحص:</strong>
+            15 سبتمبر 2026
+        </div>
+
+        <div>
+            <strong>حالة الفحص:</strong>
+            مكتمل
+        </div>
+
+    </div>
+
+
+    <!-- النتيجة -->
+
+    <div class="report-score">
+
+        <div class="score-label">
+            نتيجة الفحص
+        </div>
+
+        <div class="score-number">
+            87%
+        </div>
+
+        <div class="score-status">
+            جيد جدًا
+        </div>
+
+    </div>
+
+
+    <!-- جدول النتائج -->
+
+    <h2>نتائج الفحص</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>البند</th>
+                <th>الحالة</th>
+                <th>الدرجة</th>
+                <th>الملاحظات</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>معدات السلامة</td>
+                <td>ممتاز</td>
+                <td>95%</td>
+                <td>لا توجد ملاحظات جوهرية</td>
+            </tr>
+
+            <tr>
+                <td>خزانات الوقود</td>
+                <td>جيد</td>
+                <td>82%</td>
+                <td>تحتاج متابعة دورية</td>
+            </tr>
+
+            <tr>
+                <td>أنظمة الإنذار</td>
+                <td>ممتاز</td>
+                <td>91%</td>
+                <td>الأنظمة تعمل بشكل طبيعي</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <!-- التوصيات -->
+
+    <h2>التوصيات</h2>
+
+    <div class="recommendation">
+        يوصى بمتابعة البنود ذات الأولوية وإعادة الفحص
+        خلال الفترة المحددة من إدارة السلامة.
+    </div>
+
+
+    <div class="print-footer">
+        VISIONGUARD — منصة الفحص الذكي
+        <br>
+        تم إنشاء هذا التقرير إلكترونيًا
+    </div>
+
+</div>
 
     <br />
     <br />
@@ -2303,5 +2431,13 @@ document.addEventListener("DOMContentLoaded", function () {
       button.innerHTML = "☰";
     }
   }
+
+function printVisionGuard() {
+
+    // فتح نافذة الطباعة الأصلية للمتصفح
+    window.print();
+}
+
+
 </script>
 </html>

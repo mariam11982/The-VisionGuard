@@ -40,15 +40,8 @@ body {
       rgba(3, 17, 29, 0.7) 50%,
       #03111b 100%
     ),
-    linear-gradient(
-      rgba(69, 188, 199, 0.06) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(69, 188, 199, 0.06) 1px,
-      transparent 1px
-    ),
+    linear-gradient(rgba(69, 188, 199, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(69, 188, 199, 0.06) 1px, transparent 1px),
     url("images/imagee.png");
 
   background-size:
@@ -63,12 +56,425 @@ body {
     top center,
     top center;
 
-  background-repeat:
-    no-repeat,
-    repeat,
-    repeat,
-    no-repeat;
+  background-repeat: no-repeat, repeat, repeat, no-repeat;
 }
+
+@media print {
+
+    .idea-pdf {
+        display: block;
+    }
+
+    .idea-page {
+        width: 210mm;
+        min-height: 297mm;
+
+        box-sizing: border-box;
+
+        padding: 25mm;
+
+        break-after: page;
+        page-break-after: always;
+    }
+
+    .idea-page:last-child {
+        break-after: auto;
+        page-break-after: auto;
+    }
+}
+
+.print-pdf-btn {
+  direction: rtl;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 13px 22px;
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #42f5b5, #25dca5);
+  color: #061d25;
+
+  font-family: "Tajawal", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px rgba(66, 245, 181, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.print-pdf-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+
+  box-shadow:
+    0 12px 30px rgba(66, 245, 181, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.print-pdf-btn:active {
+  transform: translateY(0);
+}
+
+.print-icon {
+  font-size: 17px;
+}
+
+@media print {
+    body {
+        height: auto !important;
+        overflow: visible !important;
+    }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  /* طباعة الصفحة بنفس ألوان وتصميم الموقع */
+  html,
+  body {
+    width: 100%;
+    height: auto !important;
+    min-height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* نخفي فقط الأشياء التي لا نحتاجها في PDF */
+  .print-pdf-btn,
+  button,
+  .menu-btn,
+  .hamburger,
+  .no-print {
+    display: none !important;
+  }
+
+  /* لا نخفي محتوى الموقع */
+  .main-container,
+  .content,
+  .dashboard,
+  main,
+  section {
+    display: block !important;
+    visibility: visible !important;
+
+    height: auto !important;
+    min-height: auto !important;
+
+    overflow: visible !important;
+  }
+
+  /* العناصر التي كانت ثابتة في الشاشة */
+  header,
+  nav {
+    position: relative !important;
+  }
+
+  /* إزالة مشاكل القص */
+  * {
+    overflow: visible !important;
+  }
+
+  /* الصور */
+  img {
+    max-width: 100% !important;
+    break-inside: avoid;
+  }
+
+  /* البطاقات */
+  .card,
+  .glass-card,
+  .feature-card,
+  .section-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* الروابط لا تظهر كرابط أزرق */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+a print {
+  /* إعداد الصفحة */
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  /* إخفاء كل عناصر الواجهة */
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-family: "Tajawal", Arial, sans-serif;
+    direction: rtl;
+  }
+
+  /* الأشياء التي لا نريد طباعتها */
+  .no-print,
+  .print-pdf-btn,
+  .menu-btn,
+  .sidebar,
+  nav,
+  header button {
+    display: none !important;
+  }
+
+  /* إظهار محتوى التقرير */
+  .print-report {
+    display: block !important;
+    width: 100%;
+    max-width: none;
+
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  /* إزالة خلفية الموقع */
+  .page,
+  .dashboard,
+  .main-container,
+  .content,
+  body {
+    background: #fff !important;
+  }
+
+  /* البطاقات */
+  .card,
+  .inspection-card,
+  .result-card,
+  .stat-card {
+    background: #fff !important;
+    color: #111 !important;
+
+    border: 1px solid #d9dfe3 !important;
+    box-shadow: none !important;
+
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* النصوص */
+  h1,
+  h2,
+  h3,
+  p,
+  span,
+  td,
+  th {
+    color: #111 !important;
+  }
+
+  /* الجداول */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+
+  th,
+  td {
+    border: 1px solid #cfd5d9;
+    padding: 9px;
+    text-align: right;
+  }
+
+  th {
+    background: #f1f4f5 !important;
+    font-weight: 800;
+  }
+
+  /* عدم قص العناصر المهمة بين الصفحات */
+  img,
+  .card,
+  .result-card,
+  .inspection-card {
+    break-inside: avoid;
+  }
+
+  /* روابط الموقع لا تظهر كرابط طويل */
+  a {
+    color: #111 !important;
+    text-decoration: none !important;
+  }
+
+  /* الفوتر */
+  .print-footer {
+    display: block !important;
+
+    margin-top: 30px;
+    padding-top: 12px;
+
+    border-top: 1px solid #ddd;
+
+    text-align: center;
+
+    color: #666 !important;
+    font-size: 11px;
+  }
+}
+
+@media screen {
+    body {
+        min-height: 100vh;
+    }
+}
+
+
+
+.print-report {
+  display: none;
+}
+
+header {
+  position: relative;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+
+  border-bottom: 3px solid #19dca4;
+}
+
+.report-logo {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.report-logo span {
+  color: #16cfa0 !important;
+}
+
+.report-title {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.report-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+
+  padding: 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+.report-score {
+  text-align: center;
+
+  padding: 20px;
+
+  border: 2px solid #19dca4;
+  border-radius: 12px;
+
+  margin-bottom: 25px;
+}
+
+.score-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.score-number {
+  font-size: 42px;
+  font-weight: 900;
+
+  margin: 5px 0;
+
+  color: #111 !important;
+}
+
+.score-status {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.recommendation {
+  padding: 15px;
+
+  border-right: 4px solid #19dca4;
+
+  background: #f4f7f7;
+
+  line-height: 1.8;
+}
+
+.print-pdf-btn {
+  position: absolute;
+
+  /* أقصى اليسار */
+  left: 20px;
+
+  /* نزوله أسفل شريط اللوقو */
+  bottom: 12px;
+
+  /* الحجم */
+  height: 32px;
+  padding: 0 12px;
+
+  /* الشكل */
+  border-radius: 8px;
+  border: 1px solid rgba(45, 220, 190, 0.55);
+
+  /* تركوازي */
+  background: rgba(45, 220, 190, 0.12);
+  color: #35dfb8;
+
+  /* الخط */
+  font-family: "Tajawal", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+
+  /* بدون تأثيرات كبيرة */
+  box-shadow: none;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  transition: 0.2s ease;
+}
+
+.print-pdf-btn:hover {
+  background: rgba(45, 220, 190, 0.2);
+  border-color: #35dfb8;
+}
+
+.print-pdf-btn:active {
+  transform: scale(0.97);
+}
+
 .logo {
   background-color: rgba(3, 24, 40, 0.95);
 
