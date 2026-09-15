@@ -59,29 +59,7 @@ body {
   background-repeat: no-repeat, repeat, repeat, no-repeat;
 }
 
-@media print {
 
-    .idea-pdf {
-        display: block;
-    }
-
-    .idea-page {
-        width: 210mm;
-        min-height: 297mm;
-
-        box-sizing: border-box;
-
-        padding: 25mm;
-
-        break-after: page;
-        page-break-after: always;
-    }
-
-    .idea-page:last-child {
-        break-after: auto;
-        page-break-after: auto;
-    }
-}
 
 .print-pdf-btn {
   direction: rtl;
@@ -129,208 +107,8 @@ body {
   font-size: 17px;
 }
 
-@media print {
-    body {
-        height: auto !important;
-        overflow: visible !important;
-    }
-}
 
-@media print {
-  @page {
-    size: A4;
-    margin: 0;
-  }
 
-  /* طباعة الصفحة بنفس ألوان وتصميم الموقع */
-  html,
-  body {
-    width: 100%;
-    height: auto !important;
-    min-height: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    overflow: visible !important;
-
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-
-  /* نخفي فقط الأشياء التي لا نحتاجها في PDF */
-  .print-pdf-btn,
-  button,
-  .menu-btn,
-  .hamburger,
-  .no-print {
-    display: none !important;
-  }
-
-  /* لا نخفي محتوى الموقع */
-  .main-container,
-  .content,
-  .dashboard,
-  main,
-  section {
-    display: block !important;
-    visibility: visible !important;
-
-    height: auto !important;
-    min-height: auto !important;
-
-    overflow: visible !important;
-  }
-
-  /* العناصر التي كانت ثابتة في الشاشة */
-  header,
-  nav {
-    position: relative !important;
-  }
-
-  /* إزالة مشاكل القص */
-  * {
-    overflow: visible !important;
-  }
-
-  /* الصور */
-  img {
-    max-width: 100% !important;
-    break-inside: avoid;
-  }
-
-  /* البطاقات */
-  .card,
-  .glass-card,
-  .feature-card,
-  .section-card {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  /* الروابط لا تظهر كرابط أزرق */
-  a {
-    color: inherit !important;
-    text-decoration: none !important;
-  }
-}
-a print {
-  /* إعداد الصفحة */
-  @page {
-    size: A4;
-    margin: 12mm;
-  }
-
-  /* إخفاء كل عناصر الواجهة */
-  body {
-    background: #fff !important;
-    color: #111 !important;
-    font-family: "Tajawal", Arial, sans-serif;
-    direction: rtl;
-  }
-
-  /* الأشياء التي لا نريد طباعتها */
-  .no-print,
-  .print-pdf-btn,
-  .menu-btn,
-  .sidebar,
-  nav,
-  header button {
-    display: none !important;
-  }
-
-  /* إظهار محتوى التقرير */
-  .print-report {
-    display: block !important;
-    width: 100%;
-    max-width: none;
-
-    background: #fff !important;
-    color: #111 !important;
-  }
-
-  /* إزالة خلفية الموقع */
-  .page,
-  .dashboard,
-  .main-container,
-  .content,
-  body {
-    background: #fff !important;
-  }
-
-  /* البطاقات */
-  .card,
-  .inspection-card,
-  .result-card,
-  .stat-card {
-    background: #fff !important;
-    color: #111 !important;
-
-    border: 1px solid #d9dfe3 !important;
-    box-shadow: none !important;
-
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  /* النصوص */
-  h1,
-  h2,
-  h3,
-  p,
-  span,
-  td,
-  th {
-    color: #111 !important;
-  }
-
-  /* الجداول */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-
-  th,
-  td {
-    border: 1px solid #cfd5d9;
-    padding: 9px;
-    text-align: right;
-  }
-
-  th {
-    background: #f1f4f5 !important;
-    font-weight: 800;
-  }
-
-  /* عدم قص العناصر المهمة بين الصفحات */
-  img,
-  .card,
-  .result-card,
-  .inspection-card {
-    break-inside: avoid;
-  }
-
-  /* روابط الموقع لا تظهر كرابط طويل */
-  a {
-    color: #111 !important;
-    text-decoration: none !important;
-  }
-
-  /* الفوتر */
-  .print-footer {
-    display: block !important;
-
-    margin-top: 30px;
-    padding-top: 12px;
-
-    border-top: 1px solid #ddd;
-
-    text-align: center;
-
-    color: #666 !important;
-    font-size: 11px;
-  }
-}
 
 @media screen {
     body {
@@ -3410,4 +3188,123 @@ img[src*="logoteamfiscb"] {
 
   background: transparent !important;
   mix-blend-mode: screen;
+}
+/* =================================
+   تنسيق الطباعة النهائي
+================================= */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+
+  * {
+    box-sizing: border-box !important;
+
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+
+    animation: none !important;
+    transition: none !important;
+  }
+
+  html,
+  body {
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    color: #eafcff !important;
+    background-color: #03111b !important;
+  }
+
+  body {
+    background-image:
+      linear-gradient(
+        rgba(3, 17, 29, 0.65),
+        rgba(3, 17, 29, 0.92)
+      ),
+      url("images/imagee.png") !important;
+
+    background-position: top center !important;
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+  }
+
+  /* إخفاء القائمة وزر الطباعة فقط */
+
+  .print-pdf-btn,
+  #dbReportButton,
+  .mnue-btn,
+  .logo-links,
+  .no-print {
+    display: none !important;
+  }
+
+  /* منع قص الأقسام */
+
+  .problem-section,
+  .solution-section,
+  .drone-section,
+  .vg-scene,
+  .db-section,
+  .impact-section {
+    height: auto !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+  }
+
+  /* عدم تقسيم البوكسات بين صفحتين */
+
+  .problem-card,
+  .solution-card,
+  .drone-solution-card,
+  .inspection-card,
+  .vg-card,
+  .vg-step-card,
+  .db-data-card,
+  .db-wide-card,
+  .db-summary-card,
+  .impact-card,
+  .impact-summary,
+  .inspector-card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* إظهار جميع نصوص البوكسات التفاعلية */
+
+  .inspection-card p,
+  .vg-card p,
+  .vg-step-details,
+  .impact-result,
+  .db-data-card small {
+    display: block !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+
+  img,
+  svg {
+    max-width: 100% !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
 }
